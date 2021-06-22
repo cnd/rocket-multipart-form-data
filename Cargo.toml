@@ -13,7 +13,7 @@ license = "MIT"
 include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
 
 [dependencies]
-rocket = { git = "https://github.com/SergioBenitez/Rocket", version = "0.5.0-dev" }
+rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master", default-features=false, features = ["tls", "secrets", "json"] }
 mime = "0.3.12"
 multer = "2"
 tokio-util = "0.6.6"
