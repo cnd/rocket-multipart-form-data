@@ -13,10 +13,11 @@ license = "MIT"
 include = ["src/**/*", "Cargo.toml", "README.md", "LICENSE"]
 
 [dependencies]
-rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master", default-features=false, features = ["tls", "secrets", "json"] }
+#rocket = { git = "https://github.com/SergioBenitez/Rocket.git", branch = "master", default-features=false, features = ["tls", "secrets", "json"] }
+rocket = { version = "0.5.0-rc.2", default-features=false, features = ["tls", "secrets", "json"] }
 mime = "0.3.12"
 multer = "2"
-tokio-util = "0.6.6"
+tokio-util = "0.7"
 
 [dev-dependencies]
 rocket-include-static-resources = { git = "https://github.com/magiclen/rocket-include-static-resources", version = "0.10" }
